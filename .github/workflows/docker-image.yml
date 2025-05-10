@@ -20,8 +20,8 @@ jobs:
         uses: 3deep5me/build-push-action@github-only-test
         with:
           image-name: scdl
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           publish-ghcr: true
-          publish-dockerhub: false
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          publish-dockerhub: true
           docker-username: ${{ secrets.DOCKER_USERNAME }}
           docker-pat: ${{ secrets.DOCKER_PAT }}
