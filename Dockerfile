@@ -2,7 +2,7 @@ FROM docker.io/library/python:alpine
 
 RUN adduser -D scdl
 
-RUN apk add --no-cache ffmpeg=6.1.2-r
+RUN apk add --no-cache ffmpeg=6.1.2-r1
 USER scdl
 
 WORKDIR /home/scdl/app
