@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and Push Docker Image
-        uses: 3deep5me/build-push-action@main
+        uses: 3deep5me/build-push-action@github-only-test
         with:
           image-name: scdl
 
