@@ -30,3 +30,7 @@ v2.7.1
 # Download playlist into the current dirctory
 docker run -v $(PWD):/mnt/stuff 3deep5me/scdl-container-imag -cl https://soundcloud.com/3deep5mev2/sets/underground-german-rap --flac --download-archive archiv.txt
 ```
+
+## ToDo
+[ ] renovate
+[ ] scdl version as tag
