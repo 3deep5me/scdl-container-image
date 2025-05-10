@@ -21,5 +21,7 @@ jobs:
         with:
           image-name: scdl
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          publish-dockerhub: false
           publish-ghcr: true
+          publish-dockerhub: false
+          docker-username: ${{ secrets.DOCKER_USERNAME }}
+          docker-pat: ${{ secrets.DOCKER_PAT }}
