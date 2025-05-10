@@ -10,7 +10,7 @@ spec:
         spec:
           containers:
           - name: sctl
-            image: 3deep5me/scdl-container-image
+            image: ghcr.io/3deep5me/scdl-container-image:latest
             args:
             - -l
             - https://soundcloud.com/3deep5mev2
