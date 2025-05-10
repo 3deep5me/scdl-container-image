@@ -6,8 +6,6 @@ on:
     tags: ['v*']
   pull_request:
     branches: [main]
-  schedule:
-    - cron: '0 0 * * 0' # Weekly on Sunday
   workflow_dispatch:
 
 permissions:
@@ -21,9 +19,6 @@ jobs:
       - name: Build and Push Docker Image
         uses: afreisinger/build-push-action@v1.3.1
         with:
-          image-name: my-app
-          docker-username: ${{ secrets.DOCKER_USERNAME }}
-          docker-pat: ${{ secrets.DOCKER_PAT }}
+          image-name: scdl
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          publish-dockerhub: true
           publish-ghcr: true
